@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: white;
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}

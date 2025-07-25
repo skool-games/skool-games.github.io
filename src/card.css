@@ -1,0 +1,25 @@
+.game-card {
+  width: 180px;
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: white;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.game-card-title {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+}
