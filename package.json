@@ -1,6 +1,6 @@
 {
-  "homepage": "https://skool-games.github.io/",
-  "name": "classroom-unbanned-games",
+  "homepage": "https://skool-games.github.io/skool-games.github.io",
+  "name": "skool-games",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
