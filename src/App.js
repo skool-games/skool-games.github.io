@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Routes, Route } from "react-router-dom";
 import Navbar from "./navbar";
 import Contact from "./contact";
 import PrivacyPolicy from "./privacy-policy";
@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <div>
       <Navbar onSearch={handleSearch} />
       <div style={{ padding: "20px" }}>
         <Routes>
@@ -40,7 +40,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </Router>
+    </div>
   );
 }
 
