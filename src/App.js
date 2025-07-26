@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./navbar";
 import Contact from "./contact";
 import PrivacyPolicy from "./privacy-policy";
@@ -12,7 +12,7 @@ import gameData from './games.json';
 
 function App() {
   const [games] = useState(gameData.games || []);
-  
+
   const [filteredGames, setFilteredGames] = useState(gameData.games || []);
 
   const handleSearch = (query) => {
