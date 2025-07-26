@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/skool-games.github.io/static/css/main.9dfe3c72.css",
-    "main.js": "/skool-games.github.io/static/js/main.3e3771d4.js",
-    "static/js/453.85f63d15.chunk.js": "/skool-games.github.io/static/js/453.85f63d15.chunk.js",
+    "main.css": "/skool-games.github.io/static/css/main.b90a6537.css",
+    "main.js": "/skool-games.github.io/static/js/main.7196c001.js",
     "index.html": "/skool-games.github.io/index.html",
-    "main.9dfe3c72.css.map": "/skool-games.github.io/static/css/main.9dfe3c72.css.map",
-    "main.3e3771d4.js.map": "/skool-games.github.io/static/js/main.3e3771d4.js.map",
-    "453.85f63d15.chunk.js.map": "/skool-games.github.io/static/js/453.85f63d15.chunk.js.map"
+    "main.b90a6537.css.map": "/skool-games.github.io/static/css/main.b90a6537.css.map",
+    "main.7196c001.js.map": "/skool-games.github.io/static/js/main.7196c001.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dfe3c72.css",
-    "static/js/main.3e3771d4.js"
+    "static/css/main.b90a6537.css",
+    "static/js/main.7196c001.js"
   ]
 }
