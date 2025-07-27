@@ -59,3 +59,25 @@
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
 }
+
+.legal-list {
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.legal-list li {
+  margin: 8px 0;
+}
+
+.last-update {
+  margin-top: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.update-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}

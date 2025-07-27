@@ -5,6 +5,7 @@
   gap: 20px;
   padding: 30px;
   justify-content: center;
-  background-color: #000;
-  min-height: 100vh;
+  background-color: var(--bg-color);
+  min-height: calc(100vh - 60px); /* Subtracting header height to prevent double scrollbar */
+  width: 100%;
 }

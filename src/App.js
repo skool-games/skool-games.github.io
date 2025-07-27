@@ -7,13 +7,22 @@ import TermsOfService from "./terms-of-service";
 import Footer from "./footer";
 import Home from "./home";
 import GameDetail from "./game-details";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import gameData from "./games.json";
+import Settings from "./settings";
 
 function App() {
   const [games] = useState(gameData.games || []);
-
   const [filteredGames, setFilteredGames] = useState(gameData.games || []);
+
+  // Load saved theme on initial render
+  useEffect(() => {
+    const savedSettings = localStorage.getItem('skoolGamesSettings');
+    if (savedSettings) {
+      const { theme } = JSON.parse(savedSettings);
+      document.body.className = theme;
+    }
+  }, []);
 
   const handleSearch = (query) => {
     if (!query) {
@@ -38,6 +47,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
         </div>
         <Footer />

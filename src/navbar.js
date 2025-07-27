@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Settings } from 'lucide-react';
 import "./navbar.css";
 
 function Navbar({ onSearch }) {
@@ -13,7 +14,7 @@ function Navbar({ onSearch }) {
         onChange={(e) => onSearch(e.target.value)}
       />
       <div className="nav-links">
-        <Link to="/contact">Contact</Link>
+        <Link to="/settings"><Settings size={20} />Settings</Link>
       </div>
     </nav>
   );

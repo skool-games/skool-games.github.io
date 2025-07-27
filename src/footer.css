@@ -1,25 +1,92 @@
 /* src/Footer.css */
 .footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 15px 10px;
-  position: relative;
-  bottom: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 40px 20px 20px;
   width: 100%;
+  border-top: 1px solid var(--card-border);
 }
 
-.footer-links {
-  margin-top: 10px;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
-.footer-links a {
-  color: #aaa;
-  margin: 0 10px;
+.footer-section {
+  text-align: left;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: var(--text-color);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.footer-section ul li a:hover {
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid var(--card-border);
+}
+
+.footer-bottom .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.footer-bottom .disclaimer {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.footer-bottom .copyright {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
 }
