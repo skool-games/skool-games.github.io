@@ -6,8 +6,7 @@ function TermsOfService() {
   return (
     <div className="legal-container">
       <div className="legal-header">
-        <Shield size={48} />
-        <h1>Terms of Service</h1>
+        <h1>Terms of Use</h1>
       </div>
       
       <div className="legal-intro">

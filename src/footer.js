@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './contact'
+import './copyright'
+import './privacy-policy'
+import './terms-of-service'
 import './footer.css';
 
 function Footer() {
@@ -19,15 +22,14 @@ function Footer() {
                     <h3>Information</h3>
                     <ul>
                         <li><Link to="/privacy-policy">Privacy policy</Link></li>
-                        <li><Link to="/terms-of-service">Terms of use</Link></li>
+                        <li><Link to="/terms-of-service">Terms of Use</Link></li>
                     </ul>
                 </div>
 
                 <div className="footer-section">
                     <h3>Support</h3>
                     <ul>
-                        <li><Link to="/copyright">Copyright Infringement</Link></li>
-                        <li><Link to="/notice">Notice Procedure</Link></li>
+                        <li><Link to="/copyright">Copyright Infringement Notice Procedure</Link></li>
                     </ul>
                 </div>
             </div>

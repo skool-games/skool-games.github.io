@@ -1,12 +1,11 @@
 import React from 'react';
-import { Lock, Eye, Database, Shield, Cookie, Users, Globe } from 'lucide-react';
+import { Eye, Database, Shield, Cookie, Users, Globe } from 'lucide-react';
 import './legal.css';
 
 function PrivacyPolicy() {
   return (
     <div className="legal-container">
       <div className="legal-header">
-        <Lock size={48} />
         <h1>Privacy Policy</h1>
       </div>
       

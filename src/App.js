@@ -10,6 +10,8 @@ import GameDetail from "./game-details";
 import React, { useState, useEffect } from "react";
 import gameData from "./games.json";
 import Settings from "./settings";
+import Copyright from "./copyright";
+import About from "./about";
 
 function App() {
   const [games] = useState(gameData.games || []);
@@ -47,7 +49,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/copyright" element={<Copyright />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
         <Footer />
