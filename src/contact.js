@@ -60,7 +60,7 @@ function Contact() {
   return (
     <div className="contact-container">
       <div className="contact-header">
-        <h1>Contact Us</h1>
+        <h1 className="legal-header">Contact Us</h1>
         <p>Have a question? We'd love to hear from you!</p>
       </div>
 
