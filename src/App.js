@@ -13,7 +13,6 @@ import Settings from "./settings";
 import Copyright from "./copyright";
 import About from "./about";
 
-// ScrollToTop component
 function ScrollToTop() {
   const { pathname } = useLocation();
   
