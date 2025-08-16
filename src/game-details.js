@@ -59,6 +59,26 @@ function GameDetail() {
             </div>
           )}
         </div>
+        <div className="game-description">
+          <h2>About {game.name}</h2>
+          <p>
+            Welcome to {game.name}, an exciting online game available on Skool Games! 
+            This engaging game offers students a perfect blend of entertainment and learning. 
+            {game.name} is carefully selected to ensure it meets school-appropriate standards 
+            while maintaining high entertainment value.
+          </p>
+          <div className="game-keywords">
+            <h3>Game Features:</h3>
+            <ul>
+              <li>School-appropriate content</li>
+              <li>Easy to play controls</li>
+              <li>Educational value</li>
+              <li>Safe for classroom use</li>
+              <li>No downloads required</li>
+              <li>Works on all devices</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
