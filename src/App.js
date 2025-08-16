@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./navbar";
 import Contact from "./contact";
 import PrivacyPolicy from "./privacy-policy";
@@ -12,6 +12,17 @@ import gameData from "./games.json";
 import Settings from "./settings";
 import Copyright from "./copyright";
 import About from "./about";
+
+// ScrollToTop component
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
+  return null;
+}
 
 function App() {
   const [games] = useState(gameData.games || []);
@@ -41,6 +52,7 @@ function App() {
   return (
     <Router>
       <div>
+        <ScrollToTop />
         <Navbar onSearch={handleSearch} />
         <div style={{ padding: "20px" }}>
           <Routes>
