@@ -1,6 +1,13 @@
 {
   "games": [
     {
+      "id": 0,
+      "name": "Dreadhead Parkour",
+      "url": "https://scrap-metal.github.io/s7/dreadhead-parkour/",
+      "category": "Puzzle Games",
+      "image": "https://s.cafebazaar.ir/images/icons/com.gametornado.dreadhead-0a4002f3-ec5d-40fa-916a-b290f5975be8_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize"
+    },
+    {
       "id": 1,
       "name": "1010 Color Match",
       "url": "https://1010colormatch.ubg235.com/",
